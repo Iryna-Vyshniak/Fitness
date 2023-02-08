@@ -4,9 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Fitness Landing Page</title>
-    <script src="libs/gsap/gsap.min.js" defer></script>
-    <script src="libs/gsap/ScrollTrigger.min.js" defer></script>
-    <script src="libs/gsap/ScrollSmoother.min.js" defer></script>
+    <script src="./libs/gsap/gsap.min.js" defer></script>
+    <script src="./libs/gsap/ScrollTrigger.min.js" defer></script>
+    <script src="./libs/gsap/ScrollSmoother.min.js" defer></script>
     <link rel="stylesheet" href="./sass/index.scss" />
     <script type="module" src="./index.js"></script>
   </head>
@@ -30,15 +30,157 @@
     </header>
     <!-- main -->
     <main>
-      <!-- hero -->
-      <section class="hero-section">
-        <img class="hero" src="./images/hero.png" alt="hero" />
-        <div class="hero__container">
-          <div class="hero__content">
-            <h1 class="hero__title"><span>SHAPE </span>YOUR BODY</h1>
-          </div>
+      <div class="wrapper">
+        <div class="content">
+          <!-- hero -->
+          <section class="hero-section">
+            <img
+              data-speed=".6"
+              class="hero"
+              src="./images/hero.png"
+              alt="hero"
+            />
+            <div class="hero__container">
+              <div data-speed=".75" class="hero__content">
+                <h1 class="hero__title"><span>SHAPE </span>YOUR BODY</h1>
+              </div>
+            </div>
+          </section>
+          <!-- gallery -->
+          <section class="gallery">
+            <div class="gallery__container">
+              <div class="gallery__wrapper">
+                <div data-speed=".9" class="gallery__left">
+                  <img
+                    class="gallery__item"
+                    src="images/sport-1.png"
+                    alt="sportsmen"
+                    width="700"
+                  />
+                  <div class="gallery__item text-block">
+                    <h2 class="text-block__title">You just have to do it</h2>
+                    <p class="text-block__descr">
+                      The mind is the most important part of achieving any
+                      fitness goal. Mental change always comes before physical
+                      change. It always seems impossible until it is done
+                    </p>
+                  </div>
+                  <img
+                    class="gallery__item"
+                    src="images/sport-14.png"
+                    alt="sportsmen"
+                    width="400"
+                  />
+
+                  <div class="gallery__item text-block">
+                    <h2 class="text-block__title">
+                      Get Fit. Get on with Life.
+                    </h2>
+                    <p class="text-block__descr">
+                      Push harder than yesterday if you want a different
+                      tomorrow. Exercise your mind and body. Fitness is not a
+                      destination. The body achieves what the mind believes.
+                    </p>
+                  </div>
+
+                  <img
+                    class="gallery__item"
+                    src="images/sport-5.png"
+                    alt="sportsmen"
+                    width="600"
+                  />
+
+                  <div class="gallery__item text-block">
+                    <h2 class="text-block__title">
+                      Just Like Sport Used To Make
+                    </h2>
+                    <p class="text-block__descr">
+                      Exercise to stimulate, not to annihilate. The world wasn’t
+                      formed in a day, and neither were we. Set small goals and
+                      build upon them. The purpose of training is to tighten up
+                      the slack, toughen the body, and polish the spirit.
+                    </p>
+                  </div>
+                  <img
+                    class="gallery__item"
+                    src="images/sport-17.png"
+                    alt="sportsmen"
+                    width="700"
+                  />
+                </div>
+                <!-- gallery-right -->
+                <div data-speed="1.1" class="gallery__right">
+                  <div class="gallery__item text-block">
+                    <h2 class="text-block__title">
+                      Good things come to those who sweat
+                    </h2>
+                    <p class="text-block__descr">
+                      You’re going to have to let it hurt. Let it suck. The
+                      harder you work, the better you will look. Your appearance
+                      isn’t parallel to how heavy you lift, it’s parallel to how
+                      hard you work
+                    </p>
+                  </div>
+
+                  <img
+                    class="gallery__item"
+                    src="images/sport-4.png"
+                    alt="sportsmen"
+                    width="450"
+                  />
+                  <div class="gallery__item text-block">
+                    <h2 class="text-block__title">Challenge your limits</h2>
+                    <p class="text-block__descr">
+                      The gym is not the social club for the fit. It’s a
+                      training ground for everyone. Believe in yourself and all
+                      that you are. Know that there is something inside of you
+                      that is greater than any obstacle
+                    </p>
+                  </div>
+                  <img
+                    class="gallery__item"
+                    src="images/sport-3.png"
+                    alt="sportsmen"
+                    width="700"
+                  />
+                  <img
+                    class="gallery__item"
+                    src="images/sport-15.png"
+                    alt="sportsmen"
+                    width="400"
+                  />
+                  <div class="gallery__item text-block">
+                    <h2 class="text-block__title">
+                      It never gets easier, you just get better
+                    </h2>
+                    <p class="text-block__descr">
+                      To keep the body in good health is a duty… otherwise we
+                      shall not be able to keep our mind strong and clear. You
+                      can either suffer the pain of discipline or the pain of
+                      regret.
+                    </p>
+                  </div>
+                  <img
+                    class="gallery__item"
+                    src="images/sport-6.png"
+                    alt="sportsmen"
+                    width="500"
+                  />
+
+                  <div class="gallery__item text-block">
+                    <h2 class="text-block__title">Take care of your body</h2>
+                    <p class="text-block__descr">
+                      Number one, like yourself. Number two, you have to eat
+                      healthy. And number three, you’ve got to squeeze your
+                      buns. That’s the best formula.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
-      </section>
+      </div>
     </main>
   </body>
 </html>
