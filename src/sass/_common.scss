@@ -38,3 +38,10 @@ body {
 [class*="__container"] {
     padding: 0 7vw;
 }
+
+.content,
+.hero,
+.hero__content,
+.gallery__wrapper > * {
+    will-change: transform;
+}
