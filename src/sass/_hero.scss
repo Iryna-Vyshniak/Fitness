@@ -1,0 +1,23 @@
+.hero {
+    width: calc($index * 36);
+    position: absolute;
+    left: 37vw;
+    top: 22vh;
+    z-index: -1;
+}
+
+.hero__content {
+    height: 100vh;
+}
+
+.hero__title {
+    font-size: calc($index * 8);
+    position: absolute;
+    width: min-content;
+    bottom: 12vh;
+    line-height: .9;
+}
+
+.hero__title span {
+    text-shadow: 0.0313rem 1px 20px rgb(180, 9, 9);
+}
