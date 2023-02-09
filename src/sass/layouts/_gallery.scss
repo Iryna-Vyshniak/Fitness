@@ -13,7 +13,8 @@
 .gallery__title {
     position: relative;
     z-index: 1;
-    margin-bottom: 1.5rem;
+    margin-top: calc($gallery-gap * 1.75);
+    margin-bottom: $gallery-gap / 10;
     color: $color-header;
     font-family: outfit-c;
     letter-spacing: .3em;
