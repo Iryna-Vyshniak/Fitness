@@ -1,6 +1,7 @@
-@import './vars';
-@import './fonts';
-@import './common';
-@import './header';
-@import './hero';
-@import './gallery';
+@import './utils/vars';
+@import './utils/fonts';
+@import './utils/breakpoints';
+@import './layouts/common';
+@import './layouts/header';
+@import './layouts/hero';
+@import './layouts/gallery';

@@ -31,6 +31,7 @@ body {
     // background-image: url(../images/bg.jpg);
     // background-size: 3.125rem;
     color: $primary-color;
+    font-size: calc($index * .9);
     font-family: raleway-c;
     overflow-x: hidden;
 }
