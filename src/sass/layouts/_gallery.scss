@@ -13,28 +13,67 @@
 .gallery__title {
     position: relative;
     z-index: 1;
-    margin-top: calc($gallery-gap * 1.75);
-    margin-bottom: $gallery-gap / 10;
+    margin-top: calc($gallery-gap * 1.1);
+    margin-top: calc($index / 6);
     color: $color-header;
     font-family: outfit-c;
     letter-spacing: .3em;
     font-size: calc($index * 2);
-    line-height: 2.4rem;
+    line-height: 38.4px;
 
     text-transform: uppercase;
     text-align: center;
-    text-shadow: 0.0313rem .0625rem .0625rem rgb(45, 1, 1), 0.0313rem .0625rem 1.25rem rgb(180, 9, 9);
+    text-shadow: .5008px 1px 1px rgb(45, 1, 1), .5008px 1px 20px rgb(180, 9, 9);
+
+
+    @include tablet {
+        margin-top: calc($gallery-gap * 1.2);
+        margin-top: calc($index / 8);
+    }
+
+    @include max-tablet-laptop {
+        margin-top: calc($gallery-gap * 1.5);
+    }
+
+    @include desktop {
+        margin-top: calc($gallery-gap * 1.75);
+        margin-bottom: calc($index / 10);
+    }
 
 }
 
 
 .gallery__left {
-    margin-top: calc($gallery-gap * 1.75);
+    margin-top: calc($index / 10);
+
+    @include tablet {
+        margin-top: calc($index / 8);
+    }
+
+    @include max-tablet-laptop {
+        margin-top: calc($index / 6);
+    }
+
+    @include desktop {
+        margin-top: calc($gallery-gap * 1.75);
+    }
 }
 
 .gallery__right .gallery__item {
     margin: 0;
-    margin-top: $gallery-gap;
+    margin-top: calc($index / 14);
+
+    @include tablet {
+        margin-top: calc($index / 10);
+    }
+
+    @include max-tablet-laptop {
+        margin-top: calc($index / 8);
+    }
+
+    @include desktop {
+        margin-top: $gallery-gap;
+    }
 }
 
 .gallery__item-thumb {
@@ -63,34 +102,105 @@
 
 
 .gallery__item {
-    max-width: calc($index * 22);
-    margin-bottom: $gallery-gap;
-    max-height: 80vh;
-    border-radius: 8px;
+    max-width: calc($index * 10);
+    margin-bottom: calc($index / 14);
+    max-height: 40vh;
+    border-radius: .5rem;
+
+    @include tablet {
+        margin-bottom: calc($index / 10);
+        max-width: calc($index * 12);
+    }
+
+    @include max-tablet-laptop {
+        margin-bottom: calc($index / 8);
+        max-width: calc($index * 17);
+    }
+
+    @include desktop {
+        margin-bottom: $gallery-gap;
+        max-width: calc($index * 18);
+        max-height: 80vh;
+    }
+
+    @include desktop-xxlg {
+        max-width: calc($index * 22);
+    }
 }
 
 .text-block {
     position: relative;
-    padding: 1.625rem;
-    border-radius: 8px;
+    padding: 10px;
+    border-radius: .5rem;
     outline: none;
     border: none;
     background-color: transparent;
     color: $secondary-color;
-    box-shadow: 5px 5px 30px rgb(180, 9, 9), inset 1px 1px 10px rgba(255, 255, 255, 0.5);
+    box-shadow: .3125rem .3125rem 1.875rem rgb(180, 9, 9), inset .0625rem .0625rem .625rem rgba(255, 255, 255, 0.5);
+
+    @include tablet {
+        padding: 16px;
+        margin-bottom: 1.5rem;
+        line-height: 1.35;
+    }
+
+    @include max-tablet-laptop {
+        padding: 20px;
+        line-height: 1.5;
+    }
+
+    @include desktop {
+        padding: 26px;
+        font-size: calc($index * 1.2);
+        line-height: 1.75;
+    }
+
 }
 
 .text-block__title {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1rem;
     color: $color-header;
-    font-size: calc($index * 1.5);
-    line-height: 3.8rem;
+    font-size: calc($index * 1);
+    line-height: 1.2;
     text-align: center;
     text-transform: capitalize;
-    text-shadow: 0.0313rem 1px 2px rgb(180, 9, 9);
+    text-shadow: .5008px .0625rem .125rem rgb(180, 9, 9);
+
+    @include tablet {
+        margin-bottom: 1.5rem;
+        line-height: 1.35;
+    }
+
+    @include max-tablet-laptop {
+        line-height: 1.5;
+    }
+
+    @include desktop {
+        font-size: calc($index * 1.2);
+        line-height: 1.75;
+    }
+
+    @include desktop-xxlg {
+        line-height: 92.8px;
+    }
 }
 
 .text-block__descr {
-    line-height: 1.75;
-    text-align: justify;
+    line-height: 1.5;
+    text-align: center;
+    font-size: calc($index * .6);
+
+    @include max-tablet-laptop {
+        font-size: calc($index * .9);
+        line-height: 1.6;
+        text-align: justify;
+    }
+
+    @include desktop {
+        font-size: calc($index * 1);
+        line-height: 1.65;
+        text-align: justify;
+    }
+
+
 }
