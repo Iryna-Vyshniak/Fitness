@@ -1,9 +1,23 @@
 .hero {
-    width: calc($index * 36);
+    width: calc($index * 22);
     position: absolute;
-    left: 28vw;
-    top: 22vh;
+    right: .8vw;
+    top: 62vh;
     z-index: -1;
+
+    @include tablet {
+        width: calc($index * 30);
+        left: 28vw;
+        top: 22vh;
+    }
+
+    @include max-tablet-laptop {
+        width: calc($index * 32);
+    }
+
+    @include desktop {
+        width: calc($index * 36);
+    }
 }
 
 .hero__content {
@@ -11,11 +25,24 @@
 }
 
 .hero__title {
-    font-size: calc($index * 7);
+    font-size: calc($index * 5);
     position: absolute;
     width: min-content;
-    bottom: 12vh;
+    bottom: 55vh;
     line-height: .9;
+
+    @include tablet {
+        font-size: calc($index * 7);
+        bottom: 35vh;
+    }
+
+    @include max-tablet-laptop {
+        bottom: 18vh;
+    }
+
+    @include desktop {
+        bottom: 12vh;
+    }
 }
 
 .hero__title span {
