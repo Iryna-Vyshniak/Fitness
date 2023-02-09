@@ -37,7 +37,13 @@ body {
 }
 
 [class*="__container"] {
-    padding: 0 7vw;
+    padding: 0 5vw;
+}
+
+section {
+    max-width: 80vw;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .content,
